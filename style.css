@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+/* Code For Navbar */
+header {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    color: black;
+    width: 100%;
+    height: 10vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.logo h1 {
+    font-size: 40px;
+}
+
+.list a {
+    color: black;
+    text-decoration: none;
+    padding: 40px;
+    font-size: 25px;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+/* home container */
+.main-container .home-container {
+    background-image: url(/images/homepic.jpg);
+    background-size: cover;
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    /* filter: brightness(80%); */
+}
+/* service container */
+.main-container .service-container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue; */
+} 
+.main-container .service-container h1{
+    color: black;
+    text-align: center;
+} 
+.main-container .service-container .main-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem ;
+
+}
+.main-container .service-container .main-section .section img{
+    height: 30vh;
+    width: 20vw;
+}
+.main-container .service-container .main-section .section h1{
+    font-size: 1.5rem;
+}
+/* packages container */
+.packages-container{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+}
+.packages-container h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.packages-container .section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.packages-container .section .box{
+    height: 30vh;
+    width: 20vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column; 
+}
+.packages-container .section img, .packages-container .section .box .image{
+    height: 30vh;
+    width: 20vw;
+}
+.packages-container .section i{
+    width: 50%;
+    height: 50%;
+    font-size: 1.5rem;
+    display: inline;
+    margin-top: 20px;
+    color: rgb(215, 163, 66);
+}
+.packages-container .section h5{
+    display: inline; 
+}
+.packages-container .section button{
+    padding: 5px;
+    width: 50%;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.packages-container .section .button:hover{
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* booking container */
+.booking-container .section{
+    background-image: url("/images/beach.jpeg");
+    /* width: 90vw; */
+    /* height: 50vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
