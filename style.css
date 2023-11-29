@@ -28,7 +28,7 @@ nav {
 }
 
 .logo h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .list a {
@@ -43,12 +43,22 @@ nav {
 }
 /* home container */
 .main-container .home-container {
-    background-image: url(/images/homepic.jpg);
+    background: linear-gradient(rgba(20,20,31,0.7), rgba(20,20,31,0.7)), url(/images/homepic.jpg);
     background-size: cover;
     border: 2px solid black;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* filter: brightness(80%); */
+}
+.main-container .home-container h1{
+    color: aliceblue;
+}
+.main-container .home-container p{
+    color: aliceblue;
 }
 /* service container */
 .main-container .service-container{
@@ -129,25 +139,47 @@ nav {
 /* booking container */
 .booking-container{
     border: 2px solid black;
+    background: linear-gradient(rgba(20,20,31,0.7), rgba(20,20,31,0.7)), url(/images/beautiful-tropical-beach-sea.jpg);
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(/images/beautiful-tropical-beach-sea.jpg); */
+    background-size:cover;
+    background-repeat:no-repeat;
+    object-fit: cover;
+    /* filter: brightness(60%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem; */
 }
 .booking-container .section{
     /* background-image: url("/images/beach.jpeg"); */
-    /* width: 90vw; */
+    width: 80vw;
     /* height: 50vh; */
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(100%);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 30rem;
 }
 .booking-container h1{
-    color: black;
+    color: aliceblue;
     text-align: center;
 }
 .booking-container .section input{
     width: 30%;
-    height: 10%;
+    height: 5vh;
     font-size: 1rem;
     margin: 0.35rem;
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: 1px solid #ccc; 
+    padding: 5px;
+    color: aliceblue;
 }
 .booking-container .section textarea{
     width: 60%;
@@ -157,11 +189,15 @@ nav {
     border-radius: 2px;
     font-family: 'Poppins', sans-serif;
     resize: none;
+    background-color: transparent;
+    border: 1px solid #ccc; 
+    padding: 5px;
+    color: aliceblue;
 }
 .booking-container .section button{
-    width: 20%;
-    height: 15%;
-    font-size: 1rem;
+    width: 15%;
+    height: 8vh;
+    font-size: 1.3rem;
     display: block;
     margin: 0.35rem;
     background-color: black;
@@ -169,8 +205,21 @@ nav {
     border-radius: 2px;
     font-weight: bold;  
     font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: 1px solid #ccc; 
+    padding: 5px;
+    color: rgb(120, 123, 123);
+    margin-left: 18rem;
+}
+.booking-container .section button:hover{
+    color: aliceblue;
+    background-color: black;
+    border: black;
 }
 /* contact-container */
+.contact-container{
+    margin-top: 2rem;
+}
 .contact-container .section{
     display: flex;
 }
@@ -220,4 +269,17 @@ nav {
     background-color: aliceblue;
     color: black;
     font-weight: bold;
+}
+/* footer */
+footer{
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer i{
+    margin: 1rem;
+    color: white;
+    font-size: 2rem;
 }
